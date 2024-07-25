@@ -1,5 +1,8 @@
 import AnimatedMain from "@/component/AnimatedMain"
-
+export const metadata = {
+    title: "밀크스팀 - 히즈빈스",
+    description: "에스프레소에 관하여",
+};
 export default function MilkSteam(){
     return (
         <AnimatedMain>

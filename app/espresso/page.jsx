@@ -1,6 +1,6 @@
 import AnimatedMain from "@/component/AnimatedMain";
 export const metadata = {
-    title: "- 에스프레소 - 히즈빈스 : 카페 바리스타 교육 자료",
+    title: "에스프레소 - 히즈빈스",
     description: "에스프레소에 관하여",
 };
 export default function Espresso() {

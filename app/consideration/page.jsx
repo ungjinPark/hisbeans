@@ -1,4 +1,10 @@
+
+export const metadata = {
+    title: "저시력 장애인 교육 시 고려사항 - 히즈빈스",
+    description: "에스프레소에 관하여",
+};
 export default function Consideration() {
+    
     return (
         <main>
             <h1> 저시력 장애인 교육 시 고려사항 </h1>

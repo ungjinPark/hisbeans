@@ -1,6 +1,9 @@
 import AnimatedMain from "@/component/AnimatedMain";
 import FocusableImage from "@/component/FocusableImage";
-
+export const metadata = {
+    title: "주방집기류 - 히즈빈스",
+    description: "에스프레소에 관하여",
+};
 export default function Utensils() {
    return (
         <AnimatedMain className="utensils">
