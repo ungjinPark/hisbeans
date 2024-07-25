@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+@font-face {
+    font-family: '고은 바탕'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+.font-english-em { font-family: "Sevillana", cursive; font-weight: 400; 
+    font-style: normal;
+}

@@ -1,0 +1,51 @@
+@import url("./layout.css");
+@import url("./fonts.css");
+:root { 
+  --color-scheme:light;
+  --brand:#6c4232 /* medium */;
+  --brand-latte:color-mix(in srgb, var(--brand), #fef0df 75%);
+  --brand-light:color-mix(in srgb, var(--brand), #fec 45%);
+  --brand-cinnamon:color-mix(in srgb, var(--brand), #fec 15%);
+  --brand-high:color-mix(in srgb, var(--brand), #000 25%);
+  --brand-city:color-mix(in srgb, var(--brand), #000 50%);
+  --brand-full-city:color-mix(in srgb, var(--brand), #000 75%);
+  color-scheme:var(--color-scheme);
+  .force-dark { --color-scheme:dark; }
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --color-scheme:dark;
+    .force-light { --color-scheme:light; }   
+  }
+}
+
+body { background-color: var(--brand-full-city); color: var(--brand-latte);
+  background-image: url("/beans.jpg"); background-size:contain;
+}
+.logo a { text-decoration: none; color: var(--brand-light); font-style: italic;}
+a { color:var(--brand-light); text-decoration: none;}
+header { background: linear-gradient(to bottom, var(--brand-full-city), color-mix(in srgb, var(--brand-full-city), transparent 10%)); }
+footer { background: linear-gradient(to top, var(--brand-full-city), color-mix(in srgb, var(--brand-full-city), transparent 10%)); }
+.focusable-img { background-color: transparent; border: none;}
+main { 
+  background-color: color-mix(in srgb, var(--brand-full-city), transparent 20%);
+  backdrop-filter: blur(1px);
+  .focusable-img {
+    border-radius: 1em;
+    outline-offset: 0.25rem;
+    img {
+      width: 20rem;
+      opacity: 0.7;
+      border-radius: 1em;
+    }
+  }
+  .focusable-img:hover img,
+  .focusable-img:focus-within img {
+    opacity: 1;
+  }
+}
+main * {
+  opacity: var(--opacity);
+  transition:opacity 0.5s;
+}
